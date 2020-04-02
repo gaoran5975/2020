@@ -41,23 +41,6 @@ $(document).ready(function() {
     'css/images/p4pre-3.png',
     'css/images/p4pre-4.png',
     'css/images/p4pre-5.jpg',
-    'css/images/p6pre-1.png',
-    'css/images/p6pre-2.png',
-    'css/images/p6pre-3.png',
-    'css/images/p7pre-1.png',
-    'css/images/p7pre-2.png',
-    'css/images/p7pre-3.png',
-    'css/images/p7pre-4.png',
-    'css/images/p8pre-1.png',
-    'css/images/p8pre-3.png',
-    'css/images/p-fx.png',
-    'css/images/p-xh.png',
-    'css/images/p4pre-1.png',
-    'css/images/jieshu.png',
-    'css/images/ysks.png',
-    'css/images/tygy.png',
-    'css/images/duige.png',
-    'css/images/yingxiong.jpg'
   ];
   //加载图片
   for (var i = 0; i < fileList.length; i++) {
