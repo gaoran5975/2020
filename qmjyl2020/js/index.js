@@ -11,14 +11,7 @@ $(document).ready(function() {
     'css/images/p1-2.png',
     'css/images/p1-3.png',
     'css/images/p1-4.png',
-    'css/images/p1-5.png',
-    'css/images/p1-6.png',
-    'css/images/p1-7.png',
-    'css/images/p2-1.png',
-    'css/images/p2-2.png',
-    'css/images/p3-1.png',
-    'css/images/p3-2.png',
-  	'css/images/p-bg.png',
+    'css/images/p1-5.png'
   ];
   //加载图片
   for (var i = 0; i < fileList.length; i++) {
@@ -117,83 +110,6 @@ function swipergo(){
 	                }
 	              }
 	        })
-       $('#xh').click(function(){
-            $('#xh').fadeOut(300);
-            $('.p6-2').show().addClass('scalebig');
-            if(winHeight < 620){
-                   console.log('short phone')
-                   $('#xhzc').css({
-                       'bottom':'-50px'
-                   })
-            }
-            setTimeout(function(){
-               $('#xhzc').fadeIn(300)
-            },3500)
-      }) 
-      $('#addMessage').click(function(){
-      	  var name = $('#name').val();
-      	  var grade = $('#grade').val();
-      	  var school = $('#school').val();
-      	  var comment = $('#commentArea').val();
-          　console.log(name,grade,school,comment)
-      	   $.ajax({
-                      type: "get",
-                      url: 'http://partner.qianlong.com/sjsjy/qmjyl2020/message',
-                      data: {
-                          name: name,
-                          grade:grade,
-                          school:school,
-                          content:comment
-                      },
-                      dataType: "json",
-                      success: function(res) {
-                          console.log(res)
-                          $('html,body').css({'position':'relative','height':'100%'})
-                          mySwiper.slideTo(12);
-                      }, 
-                      complete:function(){
-                        //请求完成的处理
-                       },
-      			    error:function(res){                   
-      			        //请求出错处理
-      			        console.log(res)
-                    mySwiper.slideTo(12);
-      			    }
-
-      			})
-      	});
-
-        $('#next').click(function(){
-              mySwiper.slideTo(12);
-        })
-         $('#fenxiang').click(function(){
-            $('#mask,#fxts').show();
-            myVideos[5].pause()
-         })
-       
-        $('#mask,#fxts').click(function(){
-            $('#mask,#fxts').hide();
-            myVideos[5].pause()
-         })
-  }//swipergo. 结束
-      function blur() {
-
-            setTimeout(function () {
-
-            var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0
-
-              window.scrollTo(0, Math.max(scrollHeight - 1, 0))
-
-            }, 100)
-      }  
-      $('input,textarea').on('blur',function( ){
-          $('html,body').css({'height':winHeight})
-          window.scroll(0,0);
-      });
-      if(winHeight < 620){
-        $('.p3-text').css('bottom','-4%')
-        $('.p10-text').css('bottom','-8px')
-        $('#fenxiang').css('bottom','20px')
       }
-
+      
 })
