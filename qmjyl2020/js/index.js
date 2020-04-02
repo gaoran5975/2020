@@ -7,11 +7,7 @@ $(document).ready(function() {
         } 
   var loader = new window.PxLoader();
   var fileList  = [
-    'css/images/p1-1.png',
-    'css/images/p1-2.png',
-    'css/images/p1-3.png',
-    'css/images/p1-4.png',
-    'css/images/p1-5.png'
+    'css/images/p1-1.png'
   ];
   //加载图片
   for (var i = 0; i < fileList.length; i++) {
