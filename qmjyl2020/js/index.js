@@ -57,9 +57,7 @@ $(document).ready(function() {
     'css/images/ysks.png',
     'css/images/tygy.png',
     'css/images/duige.png',
-    'css/images/yingxiong.jpg',
-    'music/ysks.mp4',
-    'music/cgg.mp4'
+    'css/images/yingxiong.jpg'
   ];
   //加载图片
   for (var i = 0; i < fileList.length; i++) {
