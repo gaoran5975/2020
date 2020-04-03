@@ -1,4 +1,3 @@
-$(document).ready(function() {
     function remLayout() {
             var w = document.documentElement.clientWidth;
             w = w > 768 ? 768 : w;
@@ -107,5 +106,17 @@ function swipergo(){
 	              }
 	        })
       }
-      
-})
+   $('html,body').one('touchstart',function(){
+        audio.play();
+  });
+
+    $("#audioPlay").on('click',function(){
+       if(audio.paused){
+          audio.play();
+        $("#audioPlay").addClass('rotate');
+      }else{
+        audio.pause();
+        $("#audioPlay").removeClass('rotate');
+      }
+});   
+
